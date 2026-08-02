@@ -52,12 +52,66 @@ def _progress_bar():
 # ---------------------------------------------------------------------------
 # Header
 # ---------------------------------------------------------------------------
-st.title("Segurança temporal da criptografia RSA")
-st.caption(
-    "Exercício de pós-graduação — complexidade da encriptação exaustiva do espaço de mensagens."
+AUTHOR_LINKEDIN = "https://www.linkedin.com/in/roberto-pavusa-junior/"
+REPO_URL = "https://github.com/robdicoco/crypto_complexity"
+
+st.markdown(
+    f"""
+<style>
+.author-corner {{
+    text-align: right;
+    line-height: 1.35;
+    padding-top: 0.35rem;
+}}
+.author-corner .author-name a {{
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+}}
+.author-corner .author-name a:hover {{
+    text-decoration: underline;
+}}
+.author-corner .author-links a {{
+    color: #0a66c2;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-left: 0.65rem;
+}}
+.author-corner .author-links a:first-child {{
+    margin-left: 0;
+}}
+.author-corner .author-links a:hover {{
+    text-decoration: underline;
+}}
+</style>
+""",
+    unsafe_allow_html=True,
 )
 
-with st.expander("Sobre este programa (para o professor)", expanded=False):
+header_left, header_right = st.columns([3, 1], vertical_alignment="top")
+with header_left:
+    st.title("Segurança temporal da criptografia RSA")
+    st.caption(
+        "Exercício de pós-graduação — complexidade da encriptação exaustiva do espaço de mensagens."
+    )
+with header_right:
+    st.markdown(
+        f"""
+<div class="author-corner">
+  <div class="author-name">
+    <a href="{AUTHOR_LINKEDIN}" target="_blank" rel="noopener noreferrer">Roberto Pavusa Junior</a>
+  </div>
+  <div class="author-links">
+    <a href="{AUTHOR_LINKEDIN}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="{REPO_URL}" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+</div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with st.expander("Sobre este programa", expanded=False):
     st.markdown(
         """
 Este aplicativo reproduz visualmente o exercício de **segurança temporal** do RSA:

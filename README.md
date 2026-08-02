@@ -8,7 +8,7 @@ mas varrer um espaço de mensagens da ordem de $n$ torna-se **inviável no tempo
 
 ---
 
-## Para o professor — uso rápido
+## Uso rápido
 
 ### Pré-requisitos
 
