@@ -1,0 +1,10 @@
+[project]
+name = "crypto-complexity"
+version = "0.1.0"
+description = "Demonstração Streamlit da segurança temporal do RSA (exercício de pós-graduação)."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.60.0",
+    "sympy>=1.14.0",
+]
