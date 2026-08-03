@@ -6,6 +6,8 @@ da pós-graduação em Criptografia.
 O programa mostra, na prática, que encriptar *poucos* plaintexts é instantâneo,
 mas varrer um espaço de mensagens da ordem de $n$ torna-se **inviável no tempo**.
 
+**Demo online:** [robdicoco-crypto-complexity (Streamlit)](https://robdicoco-crypto-complexity-app-o7arzm.streamlit.app/)
+
 ---
 
 ## Uso rápido
@@ -24,6 +26,8 @@ uv run streamlit run app.py
 ```
 
 O navegador abre em `http://localhost:8501`.
+
+Para usar sem instalar, abra a [demo no Streamlit Cloud](https://robdicoco-crypto-complexity-app-o7arzm.streamlit.app/).
 
 ### Fluxo sugerido em aula (≈ 5–10 min)
 
